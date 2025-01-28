@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apotek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="apotek.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <i class="fa-solid fa-bars"></i>
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="gambar/Alicia Kheng.jpg" alt="Alicia">
+                    <h3>Alicia Kheng</h3>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>home</li>
+                    <li><i class="fa-solid fa-user"></i>pasien</li>
+                    <li><i class="fa-solid fa-pen"></i>pendaftaran</li>
+                    <li><i class="fa-regular fa-user"></i>pasien baru</li>
+                    <li class="active"><i class="fa-solid fa-hospital"></i>apotek</li>
+                    <li><i class="fa-solid fa-flask"></i>laboratorium</li>
+                    <li><i class="fa-solid fa-book-open"></i>laporan</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>apotek</h2>
+                <div class="desc">
+                    <div class="button">
+                        <button>riwayat kunjungan pasien</button>
+                    </div>
+                    <div class="form">
+                        <h3>form</h3>
+                        <form action="">
+                            <div class="left">
+                                <input type="number" id="rm" required>
+                                <label for="rm">no. rm</label>
+                                <input type="text" id="nama" required>
+                                <label for="nama">nama</label>
+                                <label for="jk">jenis kelamin</label>
+                                <select name="jk" id="jk" required>
+                                    <!-- <option value="select" disabled>select one</option> -->
+                                    <option value="laki-laki">laki-laki</option>
+                                    <option value="perempuan">perempuan</option>
+                                </select>
+                                <input type="number" id="tekanan" required>
+                                <label for="tekanan">tekanan darah</label>
+                                <input type="number" id="nadi" required>
+                                <label for="nadi">nadi</label>
+                            </div>
+                            <div class="right">
+                                <input type="text" id="alamat" required>
+                                <label for="alamat">alamat</label>
+                                <input type="text" id="alergi" required>
+                                <label for="alergi">alergi</label>
+                                <input type="number" id="badan" required>
+                                <label for="badan">tinggi berat badan</label>
+                                <input type="number" id="suhu" required>
+                                <label for="suhu">suhu</label>
+                                <select name="kesadaran" id="kesadaran" required>
+                                    <option value="sadar">sadar</option>
+                                    <option value="tidak sadar">tidak sadar</option>
+                                </select>
+                                <label for="kesadaran">kesadaran</label>
+                            </div>
+                            <div class="inputBottom">
+                                <input type="text" id="diagnosa" required>
+                                <label for="diagnosa">diagnosa</label>
+                            </div>
+                        </form>
+                        <button><span><i class="fa-regular fa-floppy-disk"></i></span>simpan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
